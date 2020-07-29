@@ -107,6 +107,7 @@ var UIController = (function() {
 				current.value = "";
 			});
 
+			fieldsArr[0].focus();
 		},
 
 		getDOMstrings: function() {
