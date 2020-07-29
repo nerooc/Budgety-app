@@ -15,12 +15,12 @@ var budgetController = (function() {
 	var data = {
 		allItems: {
 			exp: [],
-			inc: [],
+			inc: []
 		},
 
 		totals: {
 			exp: 0,
-			inc: 0,
+			inc: 0
 		},
 	};
 
@@ -28,9 +28,12 @@ var budgetController = (function() {
 		addItem: function(type, des, val) {
 			var newItem, ID;
 
-			//create new ID
-			ID = data.allItems[type][data.allItems[types].length - 1].id + 1;
-
+			//create new ID (last ID + 1)
+			if(data.allItems[type].length > 0){
+				ID = data.allItems[type][data.allItems[type].length - 1].id + 1;
+			} else {
+				ID = 0;
+			}
 			//create new item based on 'exp' or 'inc'
 			if (type === 'exp') {
 				newItem = new Expense(ID, des, val);
@@ -44,6 +47,7 @@ var budgetController = (function() {
 			//return the new element
 			return newItem;
 		},
+
 	};
 })();
 
@@ -55,7 +59,7 @@ var UIController = (function() {
 		inputValue: '.add__value',
 		inputBtn: '.add__btn',
 	};
-
+	
 	return {
 		getInput: function() {
 			return {
