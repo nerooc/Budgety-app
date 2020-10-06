@@ -1,8 +1,13 @@
-# Budgety
+# `Budgety`
+
+### [OPEN DEMO]()
+
+## Tech stack
+- HTML
+- CSS
+- Javascript
 
 A simple project that allows the user to calculate their monthly budget by summarizing earnings and expenses. 
-
-
 
 
 ![alt text](https://github.com/nerooc/budgety/blob/master/budgety_preview_1.png)
