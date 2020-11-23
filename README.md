@@ -1,6 +1,6 @@
 # `Budgety`
 
-### [OPEN DEMO]()
+### [OPEN DEMO](https://budgety-tg.netlify.app/)
 
 ## Tech stack
 - HTML
